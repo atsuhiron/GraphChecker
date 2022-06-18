@@ -1,0 +1,147 @@
+﻿{
+  "rootName": "Star",
+  "nodes": [
+    {
+      "name": "Star",
+      "displayName": "Compare to Main Sequence line",
+      "children": [
+        {
+          "nodeName": "Giants",
+          "description": "above"
+        },
+        {
+          "nodeName": "Main Sequence",
+          "description": "on"
+        },
+        {
+          "nodeName": "White Dwarfs",
+          "description": "below"
+        }
+      ],
+      "nodeType": "root"
+    },
+    {
+      "name": "Giants",
+      "displayName": "Effective temperature is larger than 10000 K",
+      "children": [
+        {
+          "nodeName": "Blue Giants",
+          "description": "yes"
+        },
+        {
+          "nodeName": "Red Giants",
+          "description": "no"
+        }
+      ],
+      "nodeType": "normal"
+    },
+    {
+      "name": "Main Sequence",
+      "displayName": "Effective temperature is larger than 3000 K",
+      "children": [
+        {
+          "nodeName": "Main Sequence 2",
+          "description": "yes"
+        },
+        {
+          "nodeName": "Low Mass Star",
+          "description": "no"
+        }
+      ],
+      "nodeType": "normal"
+    },
+    {
+      "name": "White Dwarfs",
+      "displayName": "White Dwarfs",
+      "children": [],
+      "nodeType": "leaf"
+    },
+    {
+      "name": "Blue Giants",
+      "displayName": "There is H line",
+      "children": [
+        {
+          "nodeName": "LBV",
+          "description": "yes"
+        },
+        {
+          "nodeName": "WR Star",
+          "description": "no"
+        }
+      ],
+      "nodeType": "normal"
+    },
+    {
+      "name": "Red Giants",
+      "displayName": "There is C line",
+      "children": [
+        {
+          "nodeName": "AGB",
+          "description": "yes"
+        },
+        {
+          "nodeName": "Red Giants 2",
+          "description": "no"
+        }
+      ],
+      "nodeType": "normal"
+    },
+    {
+      "name": "Main Sequence 2",
+      "displayName": "Main Sequence",
+      "children": [],
+      "nodeType": "leaf"
+    },
+    {
+      "name": "Low Mass Star",
+      "displayName": "There is Li line",
+      "children": [
+        {
+          "nodeName": "Brown Dwarfs",
+          "description": "yes"
+        },
+        {
+          "nodeName": "Red Dwarfs",
+          "description": "no"
+        }
+      ],
+      "nodeType": "normal"
+    },
+    {
+      "name": "LBV",
+      "displayName": "LBV",
+      "children": [],
+      "nodeType": "leaf"
+    },
+    {
+      "name": "WR Star",
+      "displayName": "WR Star",
+      "children": [],
+      "nodeType": "leaf"
+    },
+    {
+      "name": "AGB",
+      "displayName": "AGB",
+      "children": [],
+      "nodeType": "leaf"
+    },
+    {
+      "name": "Red Giants 2",
+      "displayName": "Red Giants",
+      "children": [],
+      "nodeType": "leaf"
+    },
+    {
+      "name": "Brown Dwarfs",
+      "displayName": "Brown Dwarfs",
+      "children": [],
+      "nodeType": "leaf"
+    },
+    {
+      "name": "Red Dwarfs",
+      "displayName": "Red Dwarfs",
+      "children": [],
+      "nodeType": "leaf"
+    }
+  ]
+}
