@@ -14,7 +14,7 @@
         // Invalid status. A leaf node has child node.
         ERR_LEAF_HAS_CHILD,
 
-        // Invalid status. Unknown node type is found
+        // Invalid status. Unknown node type is found.
         ERR_UNKNOW_TYPE,
 
         // Invalid status. A root node is not found.
