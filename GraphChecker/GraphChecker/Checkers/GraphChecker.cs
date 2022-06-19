@@ -7,7 +7,7 @@ namespace GraphChecker
 {
     public class GraphChecker
     {
-        private Tree Tree { get; init; }
+        public Tree Tree { get; init; }
         private List<BaseGraphCheckElement> CheckElements { get; init; }
 
         public GraphChecker(string fileName, JsonSerializerOptions? options = null)
@@ -56,7 +56,8 @@ namespace GraphChecker
                 new CheckOnlyOneRoot(tree),
                 new CheckUniqueNode(tree),
                 new CheckUniqueChildren(tree),
-                new CheckNoIsolated(tree)
+                new CheckNoIsolated(tree),
+                new CheckNoLoop(tree)
             };
         }
 

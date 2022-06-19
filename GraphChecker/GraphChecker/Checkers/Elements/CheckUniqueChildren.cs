@@ -23,17 +23,14 @@ namespace GraphChecker.Checkers.Elements
             return TreeStatusCodes.OK;
         }
 
-        private TreeStatusCodes DecisionChildrenNameStatus(Node node)
+        private static TreeStatusCodes DecisionChildrenNameStatus(Node node)
         {
             List<string?> childNames = node.Children?
                 .Select(child => child.NodeName)
                 .ToList() 
                 ?? new List<string?>();
 
-            List<string> nonNullChildNames = childNames
-                .Where(name => name != null)
-                .Select(name => name ?? string.Empty)
-                .ToList();
+            List<string> nonNullChildNames = node.GetChildNames();
 
             if (childNames.Count != nonNullChildNames.Count)
             {
