@@ -50,7 +50,7 @@ namespace GraphChecker.Checkers.Elements
                     {
                         return (false, new List<Node> { });
                     }
-                    nodes.Remove(childNode);
+                    nodes.Remove(node);
 
                     if (CountParentWithTheChild(childNode, nodes) == 0)
                     {
