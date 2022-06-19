@@ -1,4 +1,4 @@
-﻿namespace GraphChecker
+﻿namespace GraphChecker.Checkers
 {
     public enum TreeStatusCodes
     {

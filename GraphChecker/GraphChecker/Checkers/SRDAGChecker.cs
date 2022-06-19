@@ -3,14 +3,14 @@ using System.Text.Json.Serialization;
 using GraphChecker.Models;
 using GraphChecker.Checkers.Elements;
 
-namespace GraphChecker
+namespace GraphChecker.Checkers
 {
-    public class GraphChecker
+    public class SRDAGChecker
     {
         public Tree Tree { get; init; }
         private List<BaseGraphCheckElement> CheckElements { get; init; }
 
-        public GraphChecker(string fileName, JsonSerializerOptions? options = null)
+        public SRDAGChecker(string fileName, JsonSerializerOptions? options = null)
         {
             options ??= new JsonSerializerOptions
             {
@@ -24,14 +24,14 @@ namespace GraphChecker
                 throw new JsonException("The format of json file is invalid: " + fileName);
             }
 
-            this.Tree = readRes.Item2;
-            CheckElements = GenCheckers(this.Tree);
+            Tree = readRes.Item2;
+            CheckElements = GenCheckers(Tree);
         }
 
-        public GraphChecker(Tree tree)
+        public SRDAGChecker(Tree tree)
         {
-            this.Tree = tree;
-            CheckElements = GenCheckers(this.Tree);
+            Tree = tree;
+            CheckElements = GenCheckers(Tree);
         }
 
         public TreeStatusCodes Run()
