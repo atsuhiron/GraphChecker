@@ -1,0 +1,22 @@
+﻿{
+  "rootName": "rootNode",
+  "nodes": [
+    {
+      "name": "rootNode",
+      "children": [
+        {
+          "nodeName": "child1"
+        },
+        {
+          "nodeName": "child1"
+        }
+      ],
+      "nodeType": "root"
+    },
+    {
+      "name": "child1",
+      "children": [],
+      "nodeType": "leaf"
+    }
+  ]
+}

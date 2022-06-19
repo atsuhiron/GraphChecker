@@ -1,0 +1,10 @@
+﻿{
+  "rootName": "rootNode",
+  "nodes": [
+    {
+      "name": "child1",
+      "children": [],
+      "nodeType": "leaf"
+    }
+  ]
+}

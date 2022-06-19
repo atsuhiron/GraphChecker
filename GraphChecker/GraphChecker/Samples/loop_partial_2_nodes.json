@@ -1,0 +1,49 @@
+﻿{
+  "rootName": "rootNode",
+  "nodes": [
+    {
+      "name": "rootNode",
+      "children": [
+        {
+          "nodeName": "parent1"
+        }
+      ],
+      "nodeType": "root"
+    },
+    {
+      "name": "parent1",
+      "children": [
+        {
+          "nodeName": "parent2"
+        }
+      ],
+      "nodeType": "normal"
+    },
+    {
+      "name": "parent2",
+      "children": [
+        {
+          "nodeName": "parent3"
+        },
+        {
+          "nodeName": "child1"
+        }
+      ],
+      "nodeType": "normal"
+    },
+    {
+      "name": "parent3",
+      "children": [
+        {
+          "nodeName": "parent1"
+        }
+      ],
+      "nodeType": "normal"
+    },
+    {
+      "name": "child1",
+      "children": [],
+      "nodeType": "leaf"
+    }
+  ]
+}

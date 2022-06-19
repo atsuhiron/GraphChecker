@@ -8,8 +8,8 @@
         // Valid status.
         OK,
 
-        // Invalid status. A normal node without a leaf nodes is found.
-        ERR_LEAF_NOT_FOUND,
+        // Invalid status. A root or normal node without a child nodes is found.
+        ERR_CHILD_NOT_FOUND,
 
         // Invalid status. A leaf node has child node.
         ERR_LEAF_HAS_CHILD,

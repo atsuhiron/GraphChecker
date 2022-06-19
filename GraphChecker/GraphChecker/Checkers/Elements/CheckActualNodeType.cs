@@ -24,8 +24,8 @@ namespace GraphChecker.Checkers.Elements
         {
             return node.NodeType switch
             {
-                NodeType.ROOT => TreeStatusCodes.OK,
-                NodeType.NORMAL => (node.Children?.Count ?? 0) > 0 ? TreeStatusCodes.OK : TreeStatusCodes.ERR_LEAF_NOT_FOUND,
+                NodeType.ROOT => (node.Children?.Count ?? 0) > 0 ? TreeStatusCodes.OK : TreeStatusCodes.ERR_CHILD_NOT_FOUND,
+                NodeType.NORMAL => (node.Children?.Count ?? 0) > 0 ? TreeStatusCodes.OK : TreeStatusCodes.ERR_CHILD_NOT_FOUND,
                 NodeType.LEAF => (node.Children?.Count ?? 1) == 0 ? TreeStatusCodes.OK : TreeStatusCodes.ERR_LEAF_HAS_CHILD,
                 NodeType.UNDEF => TreeStatusCodes.ERR_UNKNOW_TYPE,
                 _ => TreeStatusCodes.ERR_UNKNOW_TYPE,
