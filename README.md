@@ -50,3 +50,6 @@ There is isolated nodes.
 
 - `ERR_LOOP`  
 There is loops.
+
+# Sample
+For a sample of JSON, [see here](https://github.com/atsuhiron/GraphChecker/tree/main/GraphChecker/GraphChecker/Samples).

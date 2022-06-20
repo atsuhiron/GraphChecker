@@ -2,7 +2,7 @@
 Json ファイルに記載されたグラフ構造をチェックします。  
 このプログラムでは有向非循環グラフで、かつルートノードが一つであることを検証します。
 
-例えば、以下の図で示したグラフはこの条件を満たしています。（赤いノードは条件分岐を表しているので、その直前の青いノードとセットになっていると考えてください。）
+例えば、以下の図で示したグラフはこの条件を満たしています。（赤いノードは条件分岐を表しているので、その直前の青いノードとセットになっていると考えてください。）  
 ![Sub types of star](https://github.com/atsuhiron/GraphChecker/blob/main/GraphChecker/GraphChecker/img/star_category.ja.png)
 
 # Usage
@@ -51,3 +51,6 @@ Console.WriteLine(statusCode);
 
 - `ERR_LOOP`  
 ループがある。
+
+# Sample
+JSON のサンプルについては[こちら](https://github.com/atsuhiron/GraphChecker/tree/main/GraphChecker/GraphChecker/Samples)を参照してください。
