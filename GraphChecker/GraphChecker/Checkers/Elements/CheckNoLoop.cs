@@ -24,18 +24,20 @@ namespace GraphChecker.Checkers.Elements
         {
             int initLength = nodes.Count;
 
-            Node? root = nodes.Find(n => n.NodeType == NodeType.ROOT);
-            if (root == null)
+            // Topological sorted list
+            List<Node> sorted = new() {};
+
+            // List of nodes with no incoming edge
+            List<Node> sources = nodes.FindAll(n => n.NodeType == NodeType.ROOT);
+            if (sources.Count == 0)
             {
                 return (false, new List<Node> { });
             }
 
-            nodes.Remove(root);
-
-            // Topological sorted list
-            List<Node> sorted = new() {};
-            // List of nodes with no incoming edge
-            List<Node> sources = new() { root };
+            foreach (Node source in sources)
+            {
+                nodes.Remove(source);
+            }
 
             while (sources.Count > 0)
             {
