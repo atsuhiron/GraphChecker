@@ -1,5 +1,5 @@
 # GraphChecker
-Check a graph structure descripted by json file.  
+Check a graph structure descripted by JSON file.  
 The program verifies that the given graph is a directed acyclic graph and has a single root node.
 
 For example, the graph in the figure below satisfies this condition. (The red node represents a branching condition, so think of it as paired with the blue node immediately preceding it.)  
@@ -7,7 +7,7 @@ For example, the graph in the figure below satisfies this condition. (The red no
 
 # Usage
 ```C#
-var fileName = "you_graph.json";
+var fileName = "your_graph.json";
 var graphChecker = new GraphChecker.Checkers.SRDAGChecker(fileName);
 
 var statusCode = graphChecker.Run();
