@@ -2,9 +2,9 @@
 
 namespace GraphChecker.Checkers.Elements
 {
-    public class CheckNoLoop : BaseGraphCheckElement
+    public class CheckNoCycle : BaseGraphCheckElement
     {
-        public CheckNoLoop(Tree tree) : base(tree) { }
+        public CheckNoCycle(Tree tree) : base(tree) { }
 
         public override TreeStatusCodes Validate()
         {
@@ -16,7 +16,7 @@ namespace GraphChecker.Checkers.Elements
             } 
             else
             {
-                return TreeStatusCodes.ERR_LOOP;
+                return TreeStatusCodes.ERR_CYCLE;
             }
         }
 
