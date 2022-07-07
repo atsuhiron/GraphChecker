@@ -22,17 +22,6 @@ namespace GraphChecker.Checkers.Elements
             bool isAllNodeChildOfAnother = nodeNamesExceptforRoot
                 .All(nodeName => allChildNames.Contains(nodeName));
 
-            foreach (string nodeName in nodeNamesExceptforRoot)
-            {
-                if (allChildNames.Contains(nodeName))
-                {
-                    isAllNodeChildOfAnother = true;
-                } else
-                {
-                    isAllNodeChildOfAnother = false;
-                }
-            }
-
             if (isAllNodeChildOfAnother)
             {
                 return TreeStatusCodes.OK;
