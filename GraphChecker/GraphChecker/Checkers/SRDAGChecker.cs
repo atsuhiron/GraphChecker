@@ -57,7 +57,7 @@ namespace GraphChecker.Checkers
                 new CheckUniqueNode(tree),
                 new CheckUniqueChildren(tree),
                 new CheckNoIsolated(tree),
-                new CheckNoLoop(tree)
+                new CheckNoCycle(tree)
             };
         }
 

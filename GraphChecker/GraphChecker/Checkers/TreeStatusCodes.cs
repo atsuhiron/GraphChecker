@@ -38,7 +38,7 @@
         // Invalid status. There is isolated nodes.
         ERR_ISOLATED,
 
-        // Invalid status. There is loops.
-        ERR_LOOP
+        // Invalid status. There is cycles.
+        ERR_CYCLE
     }
 }

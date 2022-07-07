@@ -126,43 +126,43 @@ namespace GraphCheckerTests
         }
 
         [Fact]
-        public void LoopPerfectTest()
+        public void CyclePerfectTest()
         {
-            var fileName = "../../../../GraphChecker/Samples/loop_perfect_nodes.json";
+            var fileName = "../../../../GraphChecker/Samples/cycle_perfect_nodes.json";
             var graphChecker = new SRDAGChecker(fileName);
             TreeStatusCodes actual = graphChecker.Run();
 
-            Assert.Equal(TreeStatusCodes.ERR_LOOP, actual);
+            Assert.Equal(TreeStatusCodes.ERR_CYCLE, actual);
         }
 
         [Fact]
-        public void LoopPartial1Test()
+        public void CyclePartial1Test()
         {
-            var fileName = "../../../../GraphChecker/Samples/loop_partial_1_nodes.json";
+            var fileName = "../../../../GraphChecker/Samples/cycle_partial_1_nodes.json";
             var graphChecker = new SRDAGChecker(fileName);
             TreeStatusCodes actual = graphChecker.Run();
 
-            Assert.Equal(TreeStatusCodes.ERR_LOOP, actual);
+            Assert.Equal(TreeStatusCodes.ERR_CYCLE, actual);
         }
 
         [Fact]
-        public void LoopPartial2Test()
+        public void CyclePartial2Test()
         {
-            var fileName = "../../../../GraphChecker/Samples/loop_partial_2_nodes.json";
+            var fileName = "../../../../GraphChecker/Samples/cycle_partial_2_nodes.json";
             var graphChecker = new SRDAGChecker(fileName);
             TreeStatusCodes actual = graphChecker.Run();
 
-            Assert.Equal(TreeStatusCodes.ERR_LOOP, actual);
+            Assert.Equal(TreeStatusCodes.ERR_CYCLE, actual);
         }
 
         [Fact]
-        public void LoopPartial3Test()
+        public void CyclePartial3Test()
         {
-            var fileName = "../../../../GraphChecker/Samples/loop_partial_3_nodes.json";
+            var fileName = "../../../../GraphChecker/Samples/cycle_partial_3_nodes.json";
             var graphChecker = new SRDAGChecker(fileName);
             TreeStatusCodes actual = graphChecker.Run();
 
-            Assert.Equal(TreeStatusCodes.ERR_LOOP, actual);
+            Assert.Equal(TreeStatusCodes.ERR_CYCLE, actual);
         }
     }
 }
